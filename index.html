@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="Style/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <!-- HEADER DESIGN -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hey! I am</h3>
+            <h1>Shreya Mondal</h1>
+            <h3>And I work as a <span>Data Analyst.</span></h3>
+            <p>Analyzing and visualizing data to gain deeper insights, enabling businesses to make better and more informed decisions.</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="profile.png" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>ME</span></h2>
+            <h3>Data Analyst</h3>
+            <p>
+                Naturally curious and observant. Passionate and detail-oriented Data Analyst with a strong foundation in data-driven decision-making. My journey into data analytics has been fueled by a deep-seated passion for problem-solving and a love for uncovering the stories hidden within numbers.
+            </p>
+            <p id="more-text-1" style="display: none;">
+                With a strong command of tools like Python, SQL, Power BI, and Excel, I’ve honed my skills in transforming raw data into meaningful narratives that drive strategic business decisions. Whether it’s predictive modeling or sales analysis, I approach each project with a blend of technical precision and creative thinking, ensuring that my insights not only meet but exceed business expectations.
+            </p>
+            <p id="more-text-2" style="display: none;">
+                Beyond the numbers, I’m a firm believer in the power of teamwork and clear communication. I’m just starting out in the world of data analytics, but what I may lack in experience, I make up for it with enthusiasm and genuine curiosity. I’m always eager to collaborate with others, translating complex data into stories that anyone can understand and act on. My goal is to help businesses not just get by but truly excel in today’s data-driven landscape.
+            </p>
+            <p id="more-text-3" style="display: none;">
+                When I’m not diving into data, you’ll likely find me exploring new tech, getting lost in a good book, or seeking out new experiences that fuel my creativity and drive to learn.
+            </p>
+            <div id="read-more-container">
+                <a href="#" class="btn" id="toggle-btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PROJECT SECTION -->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="blinkit.jpg" alt="Blinkit Project">
+                <div class="projects-layer">
+                    <h4>Power BI</h4>
+                    <p>Visualized Blinkit sales for 8,523 items by fat content and outlet specifics, enabling smarter inventory management and targeted marketing strategies.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="diabetes.jpg" alt="Diabetes Detection Project">
+                <div class="projects-layer">
+                    <h4>Diabetes Detection</h4>
+                    <p>A comparative analysis of different Machine Learning algorithms to predict diabetes across three datasets.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="Employee-Attrition.png" alt="Employee Attrition Project">
+                <div class="projects-layer">
+                    <h4>Employee Attrition</h4>
+                    <p>Exploratory data analysis on Employee Attrition.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contactForm" action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="text" id="mobile" placeholder="Mobile number" required>
+                <input type="text" placeholder="Email Subject" required>
+            </div>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Shreya | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- MAIN JS-SECTION -->
+    <script src="JS/main.js"></script>
+    <script>
+        // Initialize ScrollReveal
+        ScrollReveal().reveal('.home-content', {
+            origin: 'top',
+            distance: '50px',
+            duration: 1000,
+            delay: 200,
+            easing: 'ease-in-out',
+        });
+
+        ScrollReveal().reveal('.about-content', {
+            origin: 'bottom',
+            distance: '50px',
+            duration: 1000,
+            delay: 200,
+            easing: 'ease-in-out',
+        });
+
+        ScrollReveal().reveal('.projects-box', {
+            origin: 'left',
+            distance: '50px',
+            duration: 1000,
+            delay: 200,
+            easing: 'ease-in-out',
+            interval: 200, 
+        });
+
+        ScrollReveal().reveal('.contact form', {
+            origin: 'right',
+            distance: '50px',
+            duration: 1000,
+            delay: 200,
+            easing: 'ease-in-out',
+        });
+
+        
+        const moreTexts = document.querySelectorAll('[id^="more-text"]');
+        const toggleBtn = document.getElementById('toggle-btn');
+        
+        let isExpanded = false;
+    
+        toggleBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (isExpanded) {
+                moreTexts.forEach(p => p.style.display = 'none');
+                toggleBtn.innerHTML = 'Read More';
+            } else {
+                moreTexts.forEach(p => p.style.display = 'block');
+                toggleBtn.innerHTML = 'Read Less';
+            }
+            isExpanded = !isExpanded;
+        });
+    </script>
+</body>
+</html>
